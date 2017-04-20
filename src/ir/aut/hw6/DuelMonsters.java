@@ -2,7 +2,6 @@ package ir.aut.hw6;
 
 import java.util.Scanner;
 
-
 public class DuelMonsters {
     private static Player player;
     private static Player cpu;
