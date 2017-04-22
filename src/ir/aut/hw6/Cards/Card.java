@@ -11,7 +11,10 @@ public class Card {
         this.description = description;
     }
 
-    public boolean equals( Card card) {
+    public Card() {
+    }
+
+    public boolean equals(Card card) {
         return Objects.equals(this.name, card.name) && Objects.equals(this.description, card.description);
     }
 

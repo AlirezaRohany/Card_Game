@@ -1,4 +1,4 @@
-package ir.aut.hw6;
+package ir.aut.hw6.Run;
 
 import ir.aut.hw6.Cards.Card;
 import ir.aut.hw6.Cards.Special;
