@@ -11,12 +11,12 @@ public class Card {
         this.description = description;
     }
 
-    public boolean equals(Card card1, Card card2) {
-        return Objects.equals(card1.name, card2.name) && Objects.equals(card1.description, card2.description);
+    public boolean equals( Card card) {
+        return Objects.equals(this.name, card.name) && Objects.equals(this.description, card.description);
     }
 
-    public String toString(Card card) {
-        return card.name + ": " + card.description;
+    public String toString() {
+        return this.name + ": " + this.description;
     }
 
     public String getName() {

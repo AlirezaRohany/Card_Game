@@ -1,6 +1,7 @@
 package ir.aut.hw6;
 
 import ir.aut.hw6.Cards.Card;
+import ir.aut.hw6.Cards.Special;
 
 import java.util.Scanner;
 
