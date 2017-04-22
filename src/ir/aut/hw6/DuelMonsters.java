@@ -1,6 +1,9 @@
 package ir.aut.hw6;
 
+import ir.aut.hw6.Cards.Card;
+
 import java.util.Scanner;
+
 public class DuelMonsters {
     private static Player player;
     private static Player cpu;
@@ -220,7 +223,7 @@ public class DuelMonsters {
      * Prints out the visual representations of the cards.
      *
      * @param cardStrings the array of strings to represent the cards with.
-     * @param cards the cards to actually print out.
+     * @param cards       the cards to actually print out.
      */
     private static void printCards(String[] cardStrings, Card... cards) {
         for (int i = 0; i < cardStrings.length; i++) {
