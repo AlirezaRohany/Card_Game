@@ -2,7 +2,7 @@ package ir.aut.hw6.Cards;
 
 import java.util.Objects;
 
-public class Card {
+public abstract class Card {
     private String name;
     private String description;
 
@@ -15,7 +15,7 @@ public class Card {
     }
 
     public boolean equals(Card card) {
-        return Objects.equals(this.name, card.name) && Objects.equals(this.description, card.description);
+        return this.getClass() == card.getClass() && Objects.equals(this.name, card.name) && Objects.equals(this.description, card.description);
     }
 
     public String toString() {
