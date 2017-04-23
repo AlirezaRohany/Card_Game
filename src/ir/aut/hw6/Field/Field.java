@@ -16,9 +16,10 @@ public class Field {
         this.monsters = monsters;
         this.spells = spells;
     }
-/*
-3 methods remains to write
- */
+
+    /*
+    3 methods remains to write
+     */
     public MonsterCard[] getMonsters() {
         return monsters;
     }
