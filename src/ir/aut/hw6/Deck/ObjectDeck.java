@@ -3,8 +3,11 @@ package ir.aut.hw6.Deck;
 public abstract class ObjectDeck {
     private Object[] objects;
 
-    public ObjectDeck(Object[] objects) {
+    ObjectDeck(Object[] objects) {
         this.objects = objects;
+    }
+
+    public ObjectDeck() {
     }
 
     public Object deal() {
@@ -24,5 +27,11 @@ public abstract class ObjectDeck {
         return objects.length;
     }
 
-}
+    public Object[] getObjects() {
+        return objects;
+    }
 
+    public void setObjects(Object[] objects) {
+        this.objects = objects;
+    }
+}
