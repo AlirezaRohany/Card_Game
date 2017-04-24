@@ -25,7 +25,7 @@ public class MonsterCard extends Card {
         this.power = power;
     }
 
-    public boolean isCanAttack() {
+    public boolean getCanAttack() {
         return canAttack;
     }
 

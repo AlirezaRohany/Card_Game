@@ -7,9 +7,9 @@ public abstract class SpellCard extends Card {
         super(name, description);
     }
 
-    abstract void turnEffect(Field ownerField, Field enemyField);
+   public abstract void turnEffect(Field ownerField, Field enemyField);
 
-    abstract void destroyedEffect(Field ownerField, Field enemyField);
+    public abstract void destroyedEffect(Field ownerField, Field enemyField);
 
     public boolean equals(SpellCard spellCard) {
         return super.equals(spellCard);
