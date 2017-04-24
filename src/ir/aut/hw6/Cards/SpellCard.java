@@ -3,11 +3,11 @@ package ir.aut.hw6.Cards;
 import ir.aut.hw6.Field.Field;
 
 public abstract class SpellCard extends Card {
-    public SpellCard(String name, String description) {
+    SpellCard(String name, String description) {
         super(name, description);
     }
 
-   public abstract void turnEffect(Field ownerField, Field enemyField);
+    public abstract void turnEffect(Field ownerField, Field enemyField);
 
     public abstract void destroyedEffect(Field ownerField, Field enemyField);
 

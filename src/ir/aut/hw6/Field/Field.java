@@ -51,15 +51,19 @@ public class Field {
         return false;
     }
 
+    public void destroySpell(int index) {
+        this.spells[index] = null;
+    }
+
+    public void setPowerOfMonster(int index, int power) {
+        this.monsters[index].setPower(power);
+    }
+
     public MonsterCard[] getMonsters() {
         return monsters;
     }
 
     public SpellCard[] getSpells() {
         return spells;
-    }
-
-    public void destroySpell(int index) {
-        this.spells[index] = null;
     }
 }

@@ -1,10 +1,19 @@
 package ir.aut.hw6.Cards;
 
-public class PowerCard extends Card {
+import ir.aut.hw6.Field.Field;
+
+public class PowerCard extends SpellCard {
     public PowerCard() {
         super("Power Card", "Increases power of monsters by 100 each turn.");
     }
-/*
-methods remain
- */
+
+    public void turnEffect(Field ownerField, Field enemyField) {
+        for (int i = 0; i < ownerField.getMonsters().length; i++)
+            ownerField.setPowerOfMonster(i, ownerField.getMonsters()[i].getPower() + 100);
+    }
+
+    public void destroyedEffect(Field ownerField, Field enemyField) {
+        for (int i = 0; i < ownerField.getMonsters().length; i++)
+            ownerField.setPowerOfMonster(i, ownerField.getMonsters()[i].getPower() - 300);
+    }
 }
