@@ -1,4 +1,4 @@
-package ir.aut.hw6.Cards;
+package ir.aut.hw6.Special;
 
 import ir.aut.hw6.Field.Field;
 

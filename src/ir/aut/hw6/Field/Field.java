@@ -58,4 +58,8 @@ public class Field {
     public SpellCard[] getSpells() {
         return spells;
     }
+
+    public void destroySpell(int index) {
+        this.spells[index] = null;
+    }
 }
