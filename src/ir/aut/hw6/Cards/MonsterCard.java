@@ -17,6 +17,9 @@ public class MonsterCard extends Card {
         this(name, description, power, false);
     }
 
+    public MonsterCard() {
+    }
+
     public int getPower() {
         return power;
     }

@@ -22,6 +22,17 @@ public class Player {
         this(mainDeck, specialDeck, 5000);
     }
 
+    /*
+    5 methods remain
+     */
+    public void changeLifePoints(int change) {
+        lifePoints = lifePoints + change;
+    }
+
+    public boolean isDefeated() {
+        return this.lifePoints <= 0;
+    }
+
     public Card[] getHand() {
         return hand;
     }
