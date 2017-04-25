@@ -2,10 +2,11 @@
 //
 //import ir.aut.hw6.Cards.Card;
 //import ir.aut.hw6.Cards.MonsterCard;
-//import ir.aut.hw6.Special.Special;
 //import ir.aut.hw6.Deck.CardDeck;
 //import ir.aut.hw6.Deck.SpecialDeck;
 //import ir.aut.hw6.Field.Field;
+//import ir.aut.hw6.Player.Player;
+//import ir.aut.hw6.Special.Special;
 //
 //import java.util.Scanner;
 //
