@@ -3,7 +3,7 @@ package ir.aut.hw6.Deck;
 import ir.aut.hw6.Special.Special;
 
 public class SpecialDeck extends ObjectDeck {
-    public SpecialDeck(Special[] specials) {
+    public SpecialDeck(Special... specials) {
         super(specials);
     }
 

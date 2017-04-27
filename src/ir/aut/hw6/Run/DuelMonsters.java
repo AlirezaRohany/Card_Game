@@ -1,7 +1,6 @@
 //package ir.aut.hw6.Run;
 //
-//import ir.aut.hw6.Cards.Card;
-//import ir.aut.hw6.Cards.MonsterCard;
+//import ir.aut.hw6.Cards.*;
 //import ir.aut.hw6.Deck.CardDeck;
 //import ir.aut.hw6.Deck.SpecialDeck;
 //import ir.aut.hw6.Field.Field;
