@@ -1,5 +1,6 @@
 package ir.aut.hw6.Player;
 
+import ir.aut.hw6.Cards.BlueEyesWhiteDragon;
 import ir.aut.hw6.Cards.Card;
 import ir.aut.hw6.Cards.MonsterCard;
 import ir.aut.hw6.Cards.SpellCard;
@@ -75,7 +76,12 @@ public class Player {
 
     public boolean playSpecial(Field myField) {
         if (nextSpecial == null) return false;
-        if (myField.addSpellCard((SpellCard) nextSpecial)) {
+        if (nextSpecial instanceof BlueEyesWhiteDragon) {
+            if (myField.addMonsterCard((MonsterCard) nextSpecial)) {
+                nextSpecial = null;
+                return true;
+            }
+        } else if (myField.addSpellCard((SpellCard) nextSpecial)) {
             nextSpecial = null;
             return true;
         }
