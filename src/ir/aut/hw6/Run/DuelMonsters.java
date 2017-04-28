@@ -171,7 +171,7 @@ public class DuelMonsters {
      * Prints out information about the game state.
      */
     private static void printGameState() {
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.println();
         }
         System.out.println(status);

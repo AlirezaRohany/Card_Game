@@ -6,7 +6,10 @@ public abstract class TrapCard extends Card implements Special {
     public TrapCard(String name, String description) {
         super(name, description);
     }
- TrapCard(){}
+
+    TrapCard() {
+    }
+
     public boolean equals(TrapCard trapCard) {
         return super.equals(trapCard);
     }

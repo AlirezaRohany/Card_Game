@@ -9,7 +9,8 @@ public class PowerCard extends SpellCard {
 
     public void turnEffect(Field ownerField, Field enemyField) {
         for (int i = 0; i < ownerField.getMonsters().length; i++)
-            ownerField.setPowerOfMonster(i, ownerField.getMonsters()[i].getPower() + 100);
+            if (ownerField.getMonsters()[i] != null)
+                ownerField.setPowerOfMonster(i, ownerField.getMonsters()[i].getPower() + 100);
     }
 
     public void destroyedEffect(Field ownerField, Field enemyField) {

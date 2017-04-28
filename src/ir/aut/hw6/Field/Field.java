@@ -19,8 +19,8 @@ public class Field {
     }
 
     public void cardTurnEffects(Field enemyField) {
-        for (SpellCard spell : this.spells) spell.turnEffect(this, enemyField);
-        for (MonsterCard monster : this.monsters) monster.setCanAttack(true);
+        for (SpellCard spell : this.spells) if (spell != null) spell.turnEffect(this, enemyField);
+        for (MonsterCard monster : this.monsters) if (monster != null) monster.setCanAttack(true);
     }
 
     public boolean addMonsterCard(MonsterCard card) {
