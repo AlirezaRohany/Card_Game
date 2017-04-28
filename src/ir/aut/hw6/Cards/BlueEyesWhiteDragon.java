@@ -8,9 +8,7 @@ public class BlueEyesWhiteDragon extends MonsterCard implements Special {
         super("Blue Eyes White Dragon", "The best card.", 3000, true);
     }
 
-    /*
-    don't know what to do
-     */
     public void instantEffect(Field owner, Field enemy) {
+        if (owner.addMonsterCard(new BlueEyesWhiteDragon())) owner.addMonsterCard(new BlueEyesWhiteDragon());
     }
 }

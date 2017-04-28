@@ -27,9 +27,6 @@ public class Player {
         this(mainDeck, specialDeck, 5000);
     }
 
-    /*
-    doubt about draw, drawSpecial, nextTurnPrep, playCardFromHand, playSpecial methods
-     */
     public boolean draw(int count) {
         int k = 0;
         for (int i = 0; i < count; i++) {
