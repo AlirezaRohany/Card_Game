@@ -1,9 +1,6 @@
 package ir.aut.hw6.Player;
 
-import ir.aut.hw6.Cards.BlueEyesWhiteDragon;
-import ir.aut.hw6.Cards.Card;
-import ir.aut.hw6.Cards.MonsterCard;
-import ir.aut.hw6.Cards.SpellCard;
+import ir.aut.hw6.Cards.*;
 import ir.aut.hw6.Deck.CardDeck;
 import ir.aut.hw6.Deck.SpecialDeck;
 import ir.aut.hw6.Field.Field;
@@ -63,8 +60,8 @@ public class Player {
                 hand[whichCard] = null;
                 return true;
             } else return false;
-        } else if (hand[whichCard] instanceof SpellCard) {
-            if (myField.addSpellCard((SpellCard) hand[whichCard])) {
+        } else if (hand[whichCard] instanceof SpellCard || hand[whichCard] instanceof PowerCard || hand[whichCard] instanceof DestroySpell) {
+            if (myField.addSpellCard(hand[whichCard])) {
                 hand[whichCard] = null;
                 return true;
             } else return false;
@@ -78,7 +75,7 @@ public class Player {
                 nextSpecial = null;
                 return true;
             }
-        } else if (myField.addSpellCard((SpellCard) nextSpecial)) {
+        } else if (myField.addSpellCard((Card) nextSpecial)) {
             nextSpecial = null;
             return true;
         }

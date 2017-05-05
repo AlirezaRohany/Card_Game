@@ -1,5 +1,7 @@
 package ir.aut.hw6.Cards;
 
+import ir.aut.hw6.Field.Field;
+
 import java.util.Objects;
 
 public abstract class Card {
@@ -12,6 +14,10 @@ public abstract class Card {
     }
 
     public Card() {
+    }
+
+    public void turnEffect(Field owner, Field enemy) {
+
     }
 
     public boolean equals(Card card) {

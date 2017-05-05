@@ -193,10 +193,10 @@ public class DuelMonsters {
         printCards(monsterCardStrings, playerField.getMonsters());
         printCards(spellCardStrings, playerField.getSpells());
         System.out.println();
-        System.out.println("Player Monsters");
+        System.out.println("Your Monsters");
         printNumberedArray(playerField.getMonsters());
         System.out.println();
-        System.out.println("Player Spells");
+        System.out.println("Your Spells");
         printNumberedArray(playerField.getSpells());
         System.out.println();
         System.out.println("Your Hand");

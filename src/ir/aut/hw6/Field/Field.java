@@ -1,25 +1,27 @@
 package ir.aut.hw6.Field;
 
-import ir.aut.hw6.Cards.Card;
-import ir.aut.hw6.Cards.MonsterCard;
-import ir.aut.hw6.Cards.SpellCard;
+import ir.aut.hw6.Cards.*;
 
 public class Field {
     private MonsterCard[] monsters;
-    private SpellCard[] spells;
+    private Card[] spells;
 
     public Field() {
         monsters = new MonsterCard[5];
-        spells = new SpellCard[5];
+        spells = new Card[5];
     }
 
-    public Field(MonsterCard[] monsters, SpellCard[] spells) {
+    public Field(MonsterCard[] monsters, Card[] spells) {
         this.monsters = monsters;
         this.spells = spells;
     }
 
     public void cardTurnEffects(Field enemyField) {
-        for (SpellCard spell : this.spells) if (spell != null) spell.turnEffect(this, enemyField);
+        for (Card spell : this.spells)
+            if (spell != null) {
+                if (spell instanceof PowerCard || spell instanceof SpellCard) spell.turnEffect(this, enemyField);
+                else if (spell instanceof DestroySpell) ((DestroySpell) spell).instantEffect(this, enemyField);
+            }
         for (MonsterCard monster : this.monsters) if (monster != null) monster.setCanAttack(true);
     }
 
@@ -27,7 +29,7 @@ public class Field {
         return addCard(this.monsters, card);
     }
 
-    public boolean addSpellCard(SpellCard card) {
+    public boolean addSpellCard(Card card) {
         return addCard(this.spells, card);
     }
 
@@ -63,7 +65,7 @@ public class Field {
         return monsters;
     }
 
-    public SpellCard[] getSpells() {
+    public Card[] getSpells() {
         return spells;
     }
 }
