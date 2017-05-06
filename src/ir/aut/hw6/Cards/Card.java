@@ -16,12 +16,11 @@ public abstract class Card {
     public Card() {
     }
 
-    public void turnEffect(Field owner, Field enemy) {
-
-    }
-
     public boolean equals(Card card) {
         return this.getClass() == card.getClass() && Objects.equals(this.name, card.name) && Objects.equals(this.description, card.description);
+    }
+
+    public void turnEffect(Field owner, Field enemy) {
     }
 
     public String toString() {
