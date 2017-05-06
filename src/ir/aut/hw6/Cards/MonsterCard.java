@@ -1,9 +1,9 @@
 package ir.aut.hw6.Cards;
 
 public class MonsterCard extends Card {
-    int power;
-    int basePower;
-    boolean canAttack;
+    private int power;
+    private int basePower;
+    private boolean canAttack;
 
     public MonsterCard(String name, String description, int power, boolean canAttack) {
         this.setName(name);
