@@ -1,6 +1,11 @@
 package ir.aut.hw6.Player;
 
-import ir.aut.hw6.Cards.*;
+import ir.aut.hw6.Cards.BlueEyesWhiteDragon;
+import ir.aut.hw6.Cards.Card;
+import ir.aut.hw6.Cards.DestroySpell;
+import ir.aut.hw6.Cards.MonsterCard;
+import ir.aut.hw6.Cards.SpellCard;
+import ir.aut.hw6.Cards.PowerCard;
 import ir.aut.hw6.Deck.CardDeck;
 import ir.aut.hw6.Deck.SpecialDeck;
 import ir.aut.hw6.Field.Field;

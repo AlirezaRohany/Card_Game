@@ -1,6 +1,10 @@
 package ir.aut.hw6.Field;
 
-import ir.aut.hw6.Cards.*;
+import ir.aut.hw6.Cards.MonsterCard;
+import ir.aut.hw6.Cards.Card;
+import ir.aut.hw6.Cards.SpellCard;
+import ir.aut.hw6.Cards.PowerCard;
+import ir.aut.hw6.Cards.DestroySpell;
 
 public class Field {
     private MonsterCard[] monsters;
